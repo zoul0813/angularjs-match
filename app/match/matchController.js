@@ -7,6 +7,8 @@ app.controller('matchController', function($scope, $rootScope) {
     return 'glyphicon ' + (this.selected ? 'glyphicon-' + this.icon + ' selected' : '');
   }
 
+  $scope.totalPlays = 0;
+
   newGame();
 
   function newGame() {
@@ -104,6 +106,7 @@ app.controller('matchController', function($scope, $rootScope) {
       console.log('You are a Pokemon Master, you\'ve found them all!');
       if(confirm('You are a Pokemon Master, you\'ve found them all! Play again?')) {
         newGame();
+        $scope.totalPlays++;
       }
     }
   }

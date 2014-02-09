@@ -11,3 +11,7 @@ footer {
 [class*='col-'] {
   margin: 1em auto;
 }
+
+.match-board {
+  border: 1px solid #efefef;
+}

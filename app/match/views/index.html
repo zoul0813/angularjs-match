@@ -1,6 +1,5 @@
-<h1>match/views/index.html</h1>
-<p>Simple Index View</p>
-<div class="row">
+<h2>Match</h2>
+<div class="row match-board">
   <div ng-repeat="card in cards track by $index" class="col-xs-{{columnSize}} text-center">
     <button type="button" class="btn btn-default btn-lg" ng-click="cardClick()">
       <span ng-class="card.toString()"></span>
@@ -9,6 +8,13 @@
 </div>
 <div class="row">
   <div class="col-xs-6">
-    <small>Guesses <strong>{{guesses}}</strong></small>
+    <div class="well">
+      Guesses <strong>{{guesses}}</strong>
+    </div>
+  </div>
+  <div class="col-xs-6">
+    <div class="well text-right">
+      Total Plays <strong>{{totalPlays}}</strong>
+    </div>
   </div>
 </div>
