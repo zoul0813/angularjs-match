@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS/Bootstrap Match Game</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>AngularJS/Bootstrap Match Game</h1>
+      <p>This is a simple "card match" game written with AngularJS and Bootstrap CSS.</p>
+      <p><a href="http://github.com/zoul0813/angularjs-match" class="btn btn-primary btn-lg">View Source on GitHub</a></p>
+    </div>
+    
+    <div ng-view>
+      <p>Nothing {{'yet' + '!' }}</p>
+    </div>
+    
+    <footer class="text-center">
+      <small>Copyright &copy; 2014 - David Higgins. All Rights Reserved.</small>
+    </footer>
+  </div>
+
+  <script src="lib/jquery/jquery-1.11.0.min.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.min.js"></script>
+  <script src="lib/angular-ui/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+  
+
+  <script src="app/app.js"></script>
+  <script src="app/match/matchController.js"></script>
+</body>
+</html>
